@@ -1,16 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bill Splitter</title>
-    <link rel="stylesheet" href="output.css">
-</head>
-<body>
-    <main class="bg-linkedin-white h-screen flex justify-center items-center">
-        <div class="shadow-lg w-1/2 h-2/3 bg-white ">
-
-        </div>
-    </main>
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bill Splitter</title>
+        <link rel="stylesheet" href="output.css">
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <main
+            class="bg-linkedin-white h-screen flex justify-center items-center">
+            <div class="shadow-lg w-1/2 h-2/3 bg-white flex p-2">
+                <div
+                    class="w-1/2 h-full flex flex-col gap-4 p-2 justify-center">
+                    <section>
+                        <div>
+                            <label
+                                class="font-semibold text-slate-600"
+                                for="bill">Bill</label>
+                        </div>
+                        <input
+                            class="w-full px-2 h-10 outline-none rounded-md bg-linkedin-white"
+                            id="bill" type="text" />
+                    </section>
+                    <section id="select-tip">
+                        <p
+                            class="font-semibold text-slate-600">Select
+                            Tip</p>
+                        <div
+                            class="grid grid-rows-2 gap-4 grid-flow-col mt-2 text-xl font-semibold">
+                            <button
+                                class="bg-linkedin-white w-18 h-10 rounded-md text-center">5
+                                %</button>
+                            <button
+                                class="bg-linkedin-white w-18 h-10 rounded-md text-center">10
+                                %</button>
+                            <button
+                                class="bg-linkedin-white w-18 h-10 rounded-md text-center">15
+                                %</button>
+                            <button
+                                class="bg-linkedin-white w-18 h-10 rounded-md text-center">25
+                                %</button>
+                            <button
+                                class="bg-linkedin-white w-18 h-10 rounded-md text-center">50
+                                %</button>
+                            <button
+                                class="bg-linkedin-white w-18 h-10 rounded-md text-center">75
+                                %</button>
+                        </div>
+                        <input
+                            class="w-full px-2 h-10 outline-none rounded-md mt-2 bg-linkedin-white"
+                            placeholder="Custom Tip"
+                            id="custom-tip" type="text">
+                    </section>
+                    <section class>
+                        <div>
+                            <label
+                                class="font-semibold text-slate-600"
+                                for="people">Number Of People</label>
+                        </div>
+                        <input
+                            class="w-full px-2 h-10 outline-none rounded-md bg-linkedin-white"
+                            placeholder="No Of People"
+                            id="people" type="text" />
+                    </section>
+                    <button
+                    id="generate-bill"
+                        class="bg-blue-400 px-2 w-full py-1 rounded-md">Generate
+                        Bill</button>
+                </div>
+                <div
+                    class="w-1/2 h-full bg-blue-300 p-2 flex flex-col pt-8 gap-6 rounded-lg">
+                    <section>
+                        <p class="font-semibold">Tip Amount</p>
+                        <p id="tip-amount">0</p>
+                    </section>
+                    <section>
+                        <p class="font-semibold">Total</p>
+                        <p id="total">0</p>
+                    </section>
+                    <section>
+                        <p class="font-semibold">Each Person Bill</p>
+                        <p id="each-person-bill">0</p>
+                    </section>
+                    <button
+                        id="reset"
+                        class="bg-linkedin-white px-2 w-full py-1 rounded-md">Reset</button
+                    </div>
+                </div>
+            </main>
+        </body>
+    </html>
