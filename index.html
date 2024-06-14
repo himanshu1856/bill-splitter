@@ -8,11 +8,14 @@
         <script src="./script.js" defer></script>
     </head>
     <body>
+        <header class="hidden md:visible md:h-10">
+            <h1 class="text-2xl text-black font-mono text-center">Bill Splitter</h1>
+        </header>
         <main
-            class="bg-linkedin-white h-screen flex justify-center items-center">
-            <div class="shadow-lg w-1/2 h-2/3 bg-white flex p-2">
+            class="bg-linkedin-white h-screen md:flex justify-center items-center">
+            <div class="shadow-lg md:w-full lg:w-1/2 h-full md:h-2/3 bg-white md:flex p-2">
                 <div
-                    class="w-1/2 h-full flex flex-col gap-4 p-2 justify-center">
+                    class="w-full md:w-1/2 h-fit md:h-full md:flex flex-col gap-4 p-2 justify-center">
                     <section>
                         <div>
                             <label
@@ -70,7 +73,7 @@
                         Bill</button>
                 </div>
                 <div
-                    class="w-1/2 h-full bg-blue-300 p-2 flex flex-col pt-8 gap-6 rounded-lg">
+                    class="w-full md:w-1/2 h-fit md:h-full bg-blue-300 p-2 flex flex-col pt-8 gap-6 rounded-lg">
                     <section>
                         <p class="font-semibold">Tip Amount</p>
                         <p id="tip-amount">0</p>
